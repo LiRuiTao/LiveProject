@@ -16,6 +16,8 @@
     NSDictionary *data = @{@"id": liveId, @"nick": userId};
     AUIRoomLiveInfoModel *model = [[AUIRoomLiveInfoModel alloc]initWithResponseData:data];
     [[AUIInteractionLiveManager defaultManager] joinLive:model currentVC:[GXLiveManager getCurrentVC]];
+    [[AUIInteractionLiveManager defaultManager] joinLiveWithLiveId:@"直播id" currentVC:self completed:nil];
+
 }
 
 + (void)initLiveSDK:(NSString *)uid onCompleted:(void(^)(BOOL success))completed {
