@@ -19,7 +19,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     // 在这里进行InteractionLive的初始化，注意需要引入头文件
-    [AUIInteractionLiveManager registerLive];
+//    [[AUIInteractionLiveManager defaultManager]setup];
     ViewController *liveVC = [ViewController new];
     
     // 如果不使用AVNavigationController作为APP导航控制器，需要你进行以下处理：

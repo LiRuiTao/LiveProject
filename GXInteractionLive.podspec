@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "GXInteractionLive"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.3"
   spec.summary      = "A short description of GXInteractionLive."
 
   # This description is used to generate tags and improve search results.
@@ -39,7 +39,7 @@ Pod::Spec.new do |spec|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  # spec.license      = "MIT (example)"
+  # spec.license      = "MIT"
   spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -55,7 +55,7 @@ Pod::Spec.new do |spec|
 
   spec.author             = { "lrt" => "“2282050345@qq.com”" }
   # Or just: spec.author    = "lrt"
-  # spec.authors            = { "lrt" => "“2282050345@qq.com”" }
+  spec.authors            = { "lrt" => "“2282050345@qq.com”" }
   # spec.social_media_url   = "https://twitter.com/lrt"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,10 +91,9 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Class/*.{h,m}", "Class/**/*.{h,m}"
-  #spec.exclude_files = "Classes/Exclude"
+  spec.source_files  = "AUIInteractionLive/*.{h,m}", "AUIInteractionLive/**/*.{h,m}", "Class/*.{h,m,crt}", "Class/**/*.{h,m,crt}"
 
-  spec.public_header_files = "Class/*.{h}", "Class/**/*.{h}"
+  spec.public_header_files = "AUIInteractionLive/*.{h}", "AUIInteractionLive/**/*.{h}", "Class/*.{h}", "Class/**/*.{h}"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -136,9 +135,5 @@ Pod::Spec.new do |spec|
   spec.dependency "Masonry", "~> 1.1.0"
   spec.dependency "MJRefresh", "~> 3.7.5"
   spec.dependency "SDWebImage", "~> 5.16.0"
-  spec.dependency "AliVCSDK_PremiumLive", "~> 1.8.0"
-  spec.dependency "AlivcInteraction", "~> 1.0.0"
-  spec.dependency "AUIFoundation/All", "~> 1.8.0"
-  spec.dependency "AUIQueenCom/AliVCSDK_PremiumLive", "~> 1.8.0"
-  
+  spec.dependency "AliVCSDK_PremiumLive", "~> 6.2.0"
 end

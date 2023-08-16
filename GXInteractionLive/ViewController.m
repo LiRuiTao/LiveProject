@@ -21,11 +21,11 @@
     [btn addTarget:self action:@selector(openLiveListVC) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
     // Do any additional setup after loading the view.
-    [GXLiveManager initLiveSDK:@"1" onCompleted:^(BOOL success) {}];
+    [GXLiveManager initLiveSDK];
 
 }
 - (void)openLiveListVC {
-    [GXLiveManager entryLiveWithUserId:@"1" liveId:@"c1697ca5-bfca-4df3-be21-c0c3c7166c54"];
+    [GXLiveManager entryLiveWithUserId:@"3" userName:@"zhuyuntest2" liveId:@"da87b0a6-f38d-439a-8d5a-9f33fe8c98d7" onCompleted:^(BOOL success) {}];
 }
 
 @end

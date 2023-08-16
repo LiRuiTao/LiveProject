@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		17CCB8092A73B149007DFD5F /* GXLiveManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 175CDC2F2A73A61C0012FBCB /* GXLiveManager.m */; };
+		1745A4052A8B26620013F735 /* GXLiveManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1745A4042A8B26610013F735 /* GXLiveManager.m */; };
+		17E4F57E2A8CA2E5009E562D /* license.crt in Resources */ = {isa = PBXBuildFile; fileRef = 17E4F57D2A8CA2E5009E562D /* license.crt */; };
 		17E7DB3F2A67CC25000F8C35 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E7DB3E2A67CC25000F8C35 /* AppDelegate.m */; };
 		17E7DB422A67CC25000F8C35 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E7DB412A67CC25000F8C35 /* SceneDelegate.m */; };
 		17E7DB452A67CC25000F8C35 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E7DB442A67CC25000F8C35 /* ViewController.m */; };
@@ -15,61 +16,15 @@
 		17E7DB4A2A67CC27000F8C35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17E7DB492A67CC27000F8C35 /* Assets.xcassets */; };
 		17E7DB4D2A67CC27000F8C35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17E7DB4B2A67CC27000F8C35 /* LaunchScreen.storyboard */; };
 		17E7DB502A67CC27000F8C35 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E7DB4F2A67CC27000F8C35 /* main.m */; };
-		17E7DDDD2A67D065000F8C35 /* AUIInteractionLive.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 17E7DD662A67D064000F8C35 /* AUIInteractionLive.bundle */; };
-		17E7DDDE2A67D065000F8C35 /* AUILiveRoomAnchorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E7DD6A2A67D064000F8C35 /* AUILiveRoomAnchorViewController.m */; };
-		17E7DDDF2A67D065000F8C35 /* AUILiveRoomActionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E7DD6D2A67D064000F8C35 /* AUILiveRoomActionManager.m */; };
-		17E7DDE02A67D065000F8C35 /* AUILiveRoomAudienceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E7DD6F2A67D064000F8C35 /* AUILiveRoomAudienceViewController.m */; };
-		17E7DDE12A67D065000F8C35 /* AUILiveRoomCreateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E7DD712A67D064000F8C35 /* AUILiveRoomCreateViewController.m */; };
-		17E7DDE22A67D065000F8C35 /* AUIRoomLivePusher.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E7DD742A67D064000F8C35 /* AUIRoomLivePusher.m */; };
-		17E7DDE32A67D065000F8C35 /* AUIRoomMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E7DD772A67D064000F8C35 /* AUIRoomMessageModel.m */; };
-		17E7DDE42A67D065000F8C35 /* AUIRoomMessageService.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E7DD792A67D064000F8C35 /* AUIRoomMessageService.m */; };
-		17E7DDE52A67D065000F8C35 /* AUIRoomBeautyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E7DD802A67D064000F8C35 /* AUIRoomBeautyManager.m */; };
-		17E7DDE62A67D065000F8C35 /* AUIRoomBeautyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E7DD812A67D064000F8C35 /* AUIRoomBeautyController.m */; };
-		17E7DDE72A67D065000F8C35 /* AUIRoomBaseLiveManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E7DD832A67D064000F8C35 /* AUIRoomBaseLiveManager.m */; };
-		17E7DDE82A67D065000F8C35 /* AUIRoomLiveService.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E7DD882A67D064000F8C35 /* AUIRoomLiveService.m */; };
-		17E7DDE92A67D065000F8C35 /* AUIRoomInteractionLiveManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E7DD892A67D064000F8C35 /* AUIRoomInteractionLiveManager.m */; };
-		17E7DDEA2A67D065000F8C35 /* AUIRoomAppServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E7DD8C2A67D065000F8C35 /* AUIRoomAppServer.m */; };
-		17E7DDEB2A67D065000F8C35 /* AUIRoomAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E7DD8E2A67D065000F8C35 /* AUIRoomAccount.m */; };
-		17E7DDEC2A67D065000F8C35 /* AUIRoomDeviceAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E7DD8F2A67D065000F8C35 /* AUIRoomDeviceAuth.m */; };
-		17E7DDED2A67D065000F8C35 /* AUIRoomUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E7DD902A67D065000F8C35 /* AUIRoomUser.m */; };
-		17E7DDEE2A67D065000F8C35 /* AUIRoomDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E7DD952A67D065000F8C35 /* AUIRoomDisplayView.m */; };
-		17E7DDEF2A67D065000F8C35 /* AUIRoomLiveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E7DD962A67D065000F8C35 /* AUIRoomLiveModel.m */; };
-		17E7DDF02A67D065000F8C35 /* AUIRoomLiveRtcPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E7DD9A2A67D065000F8C35 /* AUIRoomLiveRtcPlayer.m */; };
-		17E7DDF12A67D065000F8C35 /* AUIRoomLiveCdnPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E7DD9D2A67D065000F8C35 /* AUIRoomLiveCdnPlayer.m */; };
-		17E7DDF22A67D065000F8C35 /* AUIRoomVodPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E7DD9E2A67D065000F8C35 /* AUIRoomVodPlayer.m */; };
-		17E7DDF32A67D065000F8C35 /* AUILiveRoomAudienceLinkMicButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E7DDA22A67D065000F8C35 /* AUILiveRoomAudienceLinkMicButton.m */; };
-		17E7DDF42A67D065000F8C35 /* AUILiveRoomLinkMicListPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E7DDA32A67D065000F8C35 /* AUILiveRoomLinkMicListPanel.m */; };
-		17E7DDF52A67D065000F8C35 /* AUILiveRoomLikeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E7DDA82A67D065000F8C35 /* AUILiveRoomLikeButton.m */; };
-		17E7DDF62A67D065000F8C35 /* AUILiveRoomCommentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E7DDAB2A67D065000F8C35 /* AUILiveRoomCommentView.m */; };
-		17E7DDF72A67D065000F8C35 /* AUILiveRoomCommentTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E7DDAC2A67D065000F8C35 /* AUILiveRoomCommentTextField.m */; };
-		17E7DDF82A67D065000F8C35 /* AUILiveRoomCommentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E7DDAE2A67D065000F8C35 /* AUILiveRoomCommentModel.m */; };
-		17E7DDF92A67D065000F8C35 /* AUILiveRoomCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E7DDB12A67D065000F8C35 /* AUILiveRoomCommentCell.m */; };
-		17E7DDFA2A67D065000F8C35 /* AUILiveRoomCommentTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E7DDB22A67D065000F8C35 /* AUILiveRoomCommentTableView.m */; };
-		17E7DDFB2A67D065000F8C35 /* AUILiveRoomAudiencePrestartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E7DDB72A67D065000F8C35 /* AUILiveRoomAudiencePrestartView.m */; };
-		17E7DDFC2A67D065000F8C35 /* AUILiveRoomAnchorPrestartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E7DDB92A67D065000F8C35 /* AUILiveRoomAnchorPrestartView.m */; };
-		17E7DDFD2A67D065000F8C35 /* AUILiveRoomMorePanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E7DDBD2A67D065000F8C35 /* AUILiveRoomMorePanel.m */; };
-		17E7DDFE2A67D065000F8C35 /* AUILiveRoomNoticeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E7DDC12A67D065000F8C35 /* AUILiveRoomNoticeButton.m */; };
-		17E7DDFF2A67D065000F8C35 /* AUILIveRoomNoticePanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E7DDC22A67D065000F8C35 /* AUILIveRoomNoticePanel.m */; };
-		17E7DE002A67D065000F8C35 /* AUILiveRoomFinishView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E7DDC52A67D065000F8C35 /* AUILiveRoomFinishView.m */; };
-		17E7DE012A67D065000F8C35 /* AUILiveRoomAnchorBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E7DDC92A67D065000F8C35 /* AUILiveRoomAnchorBottomView.m */; };
-		17E7DE022A67D065000F8C35 /* AUILiveRoomAudienceBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E7DDCA2A67D065000F8C35 /* AUILiveRoomAudienceBottomView.m */; };
-		17E7DE032A67D065000F8C35 /* AUILiveRoomAvatarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E7DDCE2A67D065000F8C35 /* AUILiveRoomAvatarView.m */; };
-		17E7DE042A67D065000F8C35 /* AUILiveRoomMemberButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E7DDCF2A67D065000F8C35 /* AUILiveRoomMemberButton.m */; };
-		17E7DE052A67D065000F8C35 /* AUILiveRoomLivingContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E7DDD02A67D065000F8C35 /* AUILiveRoomLivingContainerView.m */; };
-		17E7DE062A67D065000F8C35 /* AUILiveRoomInputTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E7DDD22A67D065000F8C35 /* AUILiveRoomInputTitleView.m */; };
-		17E7DE072A67D065000F8C35 /* AUILiveRoomPushStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E7DDD32A67D065000F8C35 /* AUILiveRoomPushStatusView.m */; };
-		17E7DE082A67D065000F8C35 /* AUILiveRoomInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E7DDD52A67D065000F8C35 /* AUILiveRoomInfoView.m */; };
-		17E7DE092A67D065000F8C35 /* AUIInteractionLiveListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E7DDD82A67D065000F8C35 /* AUIInteractionLiveListViewController.m */; };
-		17E7DE0A2A67D065000F8C35 /* AUIInteractionLiveManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E7DDDA2A67D065000F8C35 /* AUIInteractionLiveManager.m */; };
-		17E7DE0B2A67D065000F8C35 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 17E7DDDB2A67D065000F8C35 /* README.md */; };
 		17E7DE0D2A67D13D000F8C35 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 17E7DE0C2A67D13C000F8C35 /* Podfile */; };
 		17E7DE0F2A67D970000F8C35 /* GXInteractionLive.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 17E7DE0E2A67D970000F8C35 /* GXInteractionLive.podspec */; };
 		89F0E414FBC4A6CB788F2309 /* libPods-GXInteractionLive.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E74FD871CE98050A37AD1F08 /* libPods-GXInteractionLive.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		175CDC2E2A73A61C0012FBCB /* GXLiveManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXLiveManager.h; sourceTree = "<group>"; };
-		175CDC2F2A73A61C0012FBCB /* GXLiveManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXLiveManager.m; sourceTree = "<group>"; };
+		1745A4032A8B26600013F735 /* GXLiveManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GXLiveManager.h; sourceTree = "<group>"; };
+		1745A4042A8B26610013F735 /* GXLiveManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GXLiveManager.m; sourceTree = "<group>"; };
+		17E4F57D2A8CA2E5009E562D /* license.crt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = license.crt; sourceTree = "<group>"; };
 		17E7DB3A2A67CC25000F8C35 /* GXInteractionLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GXInteractionLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17E7DB3D2A67CC25000F8C35 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		17E7DB3E2A67CC25000F8C35 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -82,105 +37,7 @@
 		17E7DB4C2A67CC27000F8C35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17E7DB4E2A67CC27000F8C35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17E7DB4F2A67CC27000F8C35 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		17E7DB592A67CC28000F8C35 /* GXInteractionLiveTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXInteractionLiveTests.m; sourceTree = "<group>"; };
-		17E7DB632A67CC28000F8C35 /* GXInteractionLiveUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXInteractionLiveUITests.m; sourceTree = "<group>"; };
-		17E7DB652A67CC28000F8C35 /* GXInteractionLiveUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXInteractionLiveUITestsLaunchTests.m; sourceTree = "<group>"; };
-		17E7DD662A67D064000F8C35 /* AUIInteractionLive.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AUIInteractionLive.bundle; sourceTree = "<group>"; };
-		17E7DD692A67D064000F8C35 /* AUILiveRoomAudienceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUILiveRoomAudienceViewController.h; sourceTree = "<group>"; };
-		17E7DD6A2A67D064000F8C35 /* AUILiveRoomAnchorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUILiveRoomAnchorViewController.m; sourceTree = "<group>"; };
-		17E7DD6B2A67D064000F8C35 /* AUILiveRoomCreateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUILiveRoomCreateViewController.h; sourceTree = "<group>"; };
-		17E7DD6D2A67D064000F8C35 /* AUILiveRoomActionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUILiveRoomActionManager.m; sourceTree = "<group>"; };
-		17E7DD6E2A67D064000F8C35 /* AUILiveRoomActionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUILiveRoomActionManager.h; sourceTree = "<group>"; };
-		17E7DD6F2A67D064000F8C35 /* AUILiveRoomAudienceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUILiveRoomAudienceViewController.m; sourceTree = "<group>"; };
-		17E7DD702A67D064000F8C35 /* AUILiveRoomAnchorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUILiveRoomAnchorViewController.h; sourceTree = "<group>"; };
-		17E7DD712A67D064000F8C35 /* AUILiveRoomCreateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUILiveRoomCreateViewController.m; sourceTree = "<group>"; };
-		17E7DD742A67D064000F8C35 /* AUIRoomLivePusher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUIRoomLivePusher.m; sourceTree = "<group>"; };
-		17E7DD752A67D064000F8C35 /* AUIRoomLivePusher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUIRoomLivePusher.h; sourceTree = "<group>"; };
-		17E7DD772A67D064000F8C35 /* AUIRoomMessageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUIRoomMessageModel.m; sourceTree = "<group>"; };
-		17E7DD782A67D064000F8C35 /* AUIRoomMessageService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUIRoomMessageService.h; sourceTree = "<group>"; };
-		17E7DD792A67D064000F8C35 /* AUIRoomMessageService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUIRoomMessageService.m; sourceTree = "<group>"; };
-		17E7DD7A2A67D064000F8C35 /* AUIRoomMessageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUIRoomMessageModel.h; sourceTree = "<group>"; };
-		17E7DD7B2A67D064000F8C35 /* AUIRoomSDKHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUIRoomSDKHeader.h; sourceTree = "<group>"; };
-		17E7DD7C2A67D064000F8C35 /* AUIRoomMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUIRoomMacro.h; sourceTree = "<group>"; };
-		17E7DD7E2A67D064000F8C35 /* AUIRoomBeautyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUIRoomBeautyManager.h; sourceTree = "<group>"; };
-		17E7DD7F2A67D064000F8C35 /* AUIRoomBeautyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUIRoomBeautyController.h; sourceTree = "<group>"; };
-		17E7DD802A67D064000F8C35 /* AUIRoomBeautyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUIRoomBeautyManager.m; sourceTree = "<group>"; };
-		17E7DD812A67D064000F8C35 /* AUIRoomBeautyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUIRoomBeautyController.m; sourceTree = "<group>"; };
-		17E7DD832A67D064000F8C35 /* AUIRoomBaseLiveManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUIRoomBaseLiveManager.m; sourceTree = "<group>"; };
-		17E7DD842A67D064000F8C35 /* AUIRoomBaseLiveManager+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AUIRoomBaseLiveManager+Private.h"; sourceTree = "<group>"; };
-		17E7DD852A67D064000F8C35 /* AUIRoomLiveService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUIRoomLiveService.h; sourceTree = "<group>"; };
-		17E7DD862A67D064000F8C35 /* AUIRoomInteractionLiveManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUIRoomInteractionLiveManager.h; sourceTree = "<group>"; };
-		17E7DD872A67D064000F8C35 /* AUIRoomBaseLiveManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUIRoomBaseLiveManager.h; sourceTree = "<group>"; };
-		17E7DD882A67D064000F8C35 /* AUIRoomLiveService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUIRoomLiveService.m; sourceTree = "<group>"; };
-		17E7DD892A67D064000F8C35 /* AUIRoomInteractionLiveManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUIRoomInteractionLiveManager.m; sourceTree = "<group>"; };
-		17E7DD8B2A67D065000F8C35 /* AUIRoomAppServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUIRoomAppServer.h; sourceTree = "<group>"; };
-		17E7DD8C2A67D065000F8C35 /* AUIRoomAppServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUIRoomAppServer.m; sourceTree = "<group>"; };
-		17E7DD8E2A67D065000F8C35 /* AUIRoomAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUIRoomAccount.m; sourceTree = "<group>"; };
-		17E7DD8F2A67D065000F8C35 /* AUIRoomDeviceAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUIRoomDeviceAuth.m; sourceTree = "<group>"; };
-		17E7DD902A67D065000F8C35 /* AUIRoomUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUIRoomUser.m; sourceTree = "<group>"; };
-		17E7DD912A67D065000F8C35 /* AUIRoomLiveModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUIRoomLiveModel.h; sourceTree = "<group>"; };
-		17E7DD922A67D065000F8C35 /* AUIRoomDisplayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUIRoomDisplayView.h; sourceTree = "<group>"; };
-		17E7DD932A67D065000F8C35 /* AUIRoomAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUIRoomAccount.h; sourceTree = "<group>"; };
-		17E7DD942A67D065000F8C35 /* AUIRoomDeviceAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUIRoomDeviceAuth.h; sourceTree = "<group>"; };
-		17E7DD952A67D065000F8C35 /* AUIRoomDisplayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUIRoomDisplayView.m; sourceTree = "<group>"; };
-		17E7DD962A67D065000F8C35 /* AUIRoomLiveModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUIRoomLiveModel.m; sourceTree = "<group>"; };
-		17E7DD972A67D065000F8C35 /* AUIRoomUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUIRoomUser.h; sourceTree = "<group>"; };
-		17E7DD992A67D065000F8C35 /* AUIRoomLiveCdnPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUIRoomLiveCdnPlayer.h; sourceTree = "<group>"; };
-		17E7DD9A2A67D065000F8C35 /* AUIRoomLiveRtcPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUIRoomLiveRtcPlayer.m; sourceTree = "<group>"; };
-		17E7DD9B2A67D065000F8C35 /* AUIRoomVodPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUIRoomVodPlayer.h; sourceTree = "<group>"; };
-		17E7DD9C2A67D065000F8C35 /* AUIRoomLiveRtcPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUIRoomLiveRtcPlayer.h; sourceTree = "<group>"; };
-		17E7DD9D2A67D065000F8C35 /* AUIRoomLiveCdnPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUIRoomLiveCdnPlayer.m; sourceTree = "<group>"; };
-		17E7DD9E2A67D065000F8C35 /* AUIRoomVodPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUIRoomVodPlayer.m; sourceTree = "<group>"; };
-		17E7DD9F2A67D065000F8C35 /* AUIInteractionLiveManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUIInteractionLiveManager.h; sourceTree = "<group>"; };
-		17E7DDA22A67D065000F8C35 /* AUILiveRoomAudienceLinkMicButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUILiveRoomAudienceLinkMicButton.m; sourceTree = "<group>"; };
-		17E7DDA32A67D065000F8C35 /* AUILiveRoomLinkMicListPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUILiveRoomLinkMicListPanel.m; sourceTree = "<group>"; };
-		17E7DDA42A67D065000F8C35 /* AUILiveRoomAudienceLinkMicButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUILiveRoomAudienceLinkMicButton.h; sourceTree = "<group>"; };
-		17E7DDA52A67D065000F8C35 /* AUILiveRoomLinkMicListPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUILiveRoomLinkMicListPanel.h; sourceTree = "<group>"; };
-		17E7DDA72A67D065000F8C35 /* AUILiveRoomLikeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUILiveRoomLikeButton.h; sourceTree = "<group>"; };
-		17E7DDA82A67D065000F8C35 /* AUILiveRoomLikeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUILiveRoomLikeButton.m; sourceTree = "<group>"; };
-		17E7DDAA2A67D065000F8C35 /* AUILiveRoomCommentTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUILiveRoomCommentTextField.h; sourceTree = "<group>"; };
-		17E7DDAB2A67D065000F8C35 /* AUILiveRoomCommentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUILiveRoomCommentView.m; sourceTree = "<group>"; };
-		17E7DDAC2A67D065000F8C35 /* AUILiveRoomCommentTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUILiveRoomCommentTextField.m; sourceTree = "<group>"; };
-		17E7DDAE2A67D065000F8C35 /* AUILiveRoomCommentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUILiveRoomCommentModel.m; sourceTree = "<group>"; };
-		17E7DDAF2A67D065000F8C35 /* AUILiveRoomCommentModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUILiveRoomCommentModel.h; sourceTree = "<group>"; };
-		17E7DDB12A67D065000F8C35 /* AUILiveRoomCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUILiveRoomCommentCell.m; sourceTree = "<group>"; };
-		17E7DDB22A67D065000F8C35 /* AUILiveRoomCommentTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUILiveRoomCommentTableView.m; sourceTree = "<group>"; };
-		17E7DDB32A67D065000F8C35 /* AUILiveRoomCommentTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUILiveRoomCommentTableView.h; sourceTree = "<group>"; };
-		17E7DDB42A67D065000F8C35 /* AUILiveRoomCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUILiveRoomCommentCell.h; sourceTree = "<group>"; };
-		17E7DDB52A67D065000F8C35 /* AUILiveRoomCommentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUILiveRoomCommentView.h; sourceTree = "<group>"; };
-		17E7DDB72A67D065000F8C35 /* AUILiveRoomAudiencePrestartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUILiveRoomAudiencePrestartView.m; sourceTree = "<group>"; };
-		17E7DDB82A67D065000F8C35 /* AUILiveRoomAnchorPrestartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUILiveRoomAnchorPrestartView.h; sourceTree = "<group>"; };
-		17E7DDB92A67D065000F8C35 /* AUILiveRoomAnchorPrestartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUILiveRoomAnchorPrestartView.m; sourceTree = "<group>"; };
-		17E7DDBA2A67D065000F8C35 /* AUILiveRoomAudiencePrestartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUILiveRoomAudiencePrestartView.h; sourceTree = "<group>"; };
-		17E7DDBC2A67D065000F8C35 /* AUILiveRoomMorePanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUILiveRoomMorePanel.h; sourceTree = "<group>"; };
-		17E7DDBD2A67D065000F8C35 /* AUILiveRoomMorePanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUILiveRoomMorePanel.m; sourceTree = "<group>"; };
-		17E7DDBF2A67D065000F8C35 /* AUILIveRoomNoticePanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUILIveRoomNoticePanel.h; sourceTree = "<group>"; };
-		17E7DDC02A67D065000F8C35 /* AUILiveRoomNoticeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUILiveRoomNoticeButton.h; sourceTree = "<group>"; };
-		17E7DDC12A67D065000F8C35 /* AUILiveRoomNoticeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUILiveRoomNoticeButton.m; sourceTree = "<group>"; };
-		17E7DDC22A67D065000F8C35 /* AUILIveRoomNoticePanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUILIveRoomNoticePanel.m; sourceTree = "<group>"; };
-		17E7DDC42A67D065000F8C35 /* AUILiveRoomFinishView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUILiveRoomFinishView.h; sourceTree = "<group>"; };
-		17E7DDC52A67D065000F8C35 /* AUILiveRoomFinishView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUILiveRoomFinishView.m; sourceTree = "<group>"; };
-		17E7DDC72A67D065000F8C35 /* AUILiveRoomAnchorBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUILiveRoomAnchorBottomView.h; sourceTree = "<group>"; };
-		17E7DDC82A67D065000F8C35 /* AUILiveRoomAudienceBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUILiveRoomAudienceBottomView.h; sourceTree = "<group>"; };
-		17E7DDC92A67D065000F8C35 /* AUILiveRoomAnchorBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUILiveRoomAnchorBottomView.m; sourceTree = "<group>"; };
-		17E7DDCA2A67D065000F8C35 /* AUILiveRoomAudienceBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUILiveRoomAudienceBottomView.m; sourceTree = "<group>"; };
-		17E7DDCC2A67D065000F8C35 /* AUILiveRoomPushStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUILiveRoomPushStatusView.h; sourceTree = "<group>"; };
-		17E7DDCD2A67D065000F8C35 /* AUILiveRoomInputTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUILiveRoomInputTitleView.h; sourceTree = "<group>"; };
-		17E7DDCE2A67D065000F8C35 /* AUILiveRoomAvatarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUILiveRoomAvatarView.m; sourceTree = "<group>"; };
-		17E7DDCF2A67D065000F8C35 /* AUILiveRoomMemberButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUILiveRoomMemberButton.m; sourceTree = "<group>"; };
-		17E7DDD02A67D065000F8C35 /* AUILiveRoomLivingContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUILiveRoomLivingContainerView.m; sourceTree = "<group>"; };
-		17E7DDD12A67D065000F8C35 /* AUILiveRoomInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUILiveRoomInfoView.h; sourceTree = "<group>"; };
-		17E7DDD22A67D065000F8C35 /* AUILiveRoomInputTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUILiveRoomInputTitleView.m; sourceTree = "<group>"; };
-		17E7DDD32A67D065000F8C35 /* AUILiveRoomPushStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUILiveRoomPushStatusView.m; sourceTree = "<group>"; };
-		17E7DDD42A67D065000F8C35 /* AUILiveRoomAvatarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUILiveRoomAvatarView.h; sourceTree = "<group>"; };
-		17E7DDD52A67D065000F8C35 /* AUILiveRoomInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUILiveRoomInfoView.m; sourceTree = "<group>"; };
-		17E7DDD62A67D065000F8C35 /* AUILiveRoomLivingContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUILiveRoomLivingContainerView.h; sourceTree = "<group>"; };
-		17E7DDD72A67D065000F8C35 /* AUILiveRoomMemberButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUILiveRoomMemberButton.h; sourceTree = "<group>"; };
-		17E7DDD82A67D065000F8C35 /* AUIInteractionLiveListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUIInteractionLiveListViewController.m; sourceTree = "<group>"; };
-		17E7DDD92A67D065000F8C35 /* AUIInteractionLiveListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUIInteractionLiveListViewController.h; sourceTree = "<group>"; };
-		17E7DDDA2A67D065000F8C35 /* AUIInteractionLiveManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUIInteractionLiveManager.m; sourceTree = "<group>"; };
-		17E7DDDB2A67D065000F8C35 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		17E7DE0C2A67D13C000F8C35 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		17E7DE0C2A67D13C000F8C35 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		17E7DE0E2A67D970000F8C35 /* GXInteractionLive.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GXInteractionLive.podspec; sourceTree = "<group>"; };
 		1CAAFA021ACC111830C16F8C /* Pods-GXInteractionLive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GXInteractionLive.debug.xcconfig"; path = "Target Support Files/Pods-GXInteractionLive/Pods-GXInteractionLive.debug.xcconfig"; sourceTree = "<group>"; };
 		98EEC36AF8C4417164137F56 /* Pods-GXInteractionLive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GXInteractionLive.release.xcconfig"; path = "Target Support Files/Pods-GXInteractionLive/Pods-GXInteractionLive.release.xcconfig"; sourceTree = "<group>"; };
@@ -199,17 +56,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1745A4022A8B264B0013F735 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				1745A4032A8B26600013F735 /* GXLiveManager.h */,
+				1745A4042A8B26610013F735 /* GXLiveManager.m */,
+				17E4F57D2A8CA2E5009E562D /* license.crt */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
 		17E7DB312A67CC25000F8C35 = {
 			isa = PBXGroup;
 			children = (
+				1745A4022A8B264B0013F735 /* Class */,
 				17E7DE0E2A67D970000F8C35 /* GXInteractionLive.podspec */,
 				17E7DE0C2A67D13C000F8C35 /* Podfile */,
-				17E7DD672A67D064000F8C35 /* Class */,
-				17E7DDDB2A67D065000F8C35 /* README.md */,
-				17E7DD652A67D064000F8C35 /* Resources */,
 				17E7DB3C2A67CC25000F8C35 /* GXInteractionLive */,
-				17E7DB582A67CC28000F8C35 /* GXInteractionLiveTests */,
-				17E7DB622A67CC28000F8C35 /* GXInteractionLiveUITests */,
 				17E7DB3B2A67CC25000F8C35 /* Products */,
 				6B3A9EF6607301CF5D506E4F /* Pods */,
 				BAF99F6DB8DC7EBF4E601B13 /* Frameworks */,
@@ -240,309 +103,6 @@
 				17E7DB4F2A67CC27000F8C35 /* main.m */,
 			);
 			path = GXInteractionLive;
-			sourceTree = "<group>";
-		};
-		17E7DB582A67CC28000F8C35 /* GXInteractionLiveTests */ = {
-			isa = PBXGroup;
-			children = (
-				17E7DB592A67CC28000F8C35 /* GXInteractionLiveTests.m */,
-			);
-			path = GXInteractionLiveTests;
-			sourceTree = "<group>";
-		};
-		17E7DB622A67CC28000F8C35 /* GXInteractionLiveUITests */ = {
-			isa = PBXGroup;
-			children = (
-				17E7DB632A67CC28000F8C35 /* GXInteractionLiveUITests.m */,
-				17E7DB652A67CC28000F8C35 /* GXInteractionLiveUITestsLaunchTests.m */,
-			);
-			path = GXInteractionLiveUITests;
-			sourceTree = "<group>";
-		};
-		17E7DD652A67D064000F8C35 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				17E7DD662A67D064000F8C35 /* AUIInteractionLive.bundle */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		17E7DD672A67D064000F8C35 /* Class */ = {
-			isa = PBXGroup;
-			children = (
-				175CDC2E2A73A61C0012FBCB /* GXLiveManager.h */,
-				175CDC2F2A73A61C0012FBCB /* GXLiveManager.m */,
-				17E7DD682A67D064000F8C35 /* Room */,
-				17E7DD722A67D064000F8C35 /* Core */,
-				17E7DDA02A67D065000F8C35 /* UIKit */,
-				17E7DDD82A67D065000F8C35 /* AUIInteractionLiveListViewController.m */,
-				17E7DDDA2A67D065000F8C35 /* AUIInteractionLiveManager.m */,
-				17E7DDD92A67D065000F8C35 /* AUIInteractionLiveListViewController.h */,
-				17E7DD9F2A67D065000F8C35 /* AUIInteractionLiveManager.h */,
-			);
-			path = Class;
-			sourceTree = "<group>";
-		};
-		17E7DD682A67D064000F8C35 /* Room */ = {
-			isa = PBXGroup;
-			children = (
-				17E7DD692A67D064000F8C35 /* AUILiveRoomAudienceViewController.h */,
-				17E7DD6A2A67D064000F8C35 /* AUILiveRoomAnchorViewController.m */,
-				17E7DD6B2A67D064000F8C35 /* AUILiveRoomCreateViewController.h */,
-				17E7DD6C2A67D064000F8C35 /* Manager */,
-				17E7DD6F2A67D064000F8C35 /* AUILiveRoomAudienceViewController.m */,
-				17E7DD702A67D064000F8C35 /* AUILiveRoomAnchorViewController.h */,
-				17E7DD712A67D064000F8C35 /* AUILiveRoomCreateViewController.m */,
-			);
-			path = Room;
-			sourceTree = "<group>";
-		};
-		17E7DD6C2A67D064000F8C35 /* Manager */ = {
-			isa = PBXGroup;
-			children = (
-				17E7DD6D2A67D064000F8C35 /* AUILiveRoomActionManager.m */,
-				17E7DD6E2A67D064000F8C35 /* AUILiveRoomActionManager.h */,
-			);
-			path = Manager;
-			sourceTree = "<group>";
-		};
-		17E7DD722A67D064000F8C35 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				17E7DD732A67D064000F8C35 /* Pusher */,
-				17E7DD762A67D064000F8C35 /* Message */,
-				17E7DD7B2A67D064000F8C35 /* AUIRoomSDKHeader.h */,
-				17E7DD7C2A67D064000F8C35 /* AUIRoomMacro.h */,
-				17E7DD7D2A67D064000F8C35 /* Beauty */,
-				17E7DD822A67D064000F8C35 /* Live */,
-				17E7DD8A2A67D064000F8C35 /* AppServer */,
-				17E7DD8D2A67D065000F8C35 /* Base */,
-				17E7DD982A67D065000F8C35 /* Player */,
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
-		17E7DD732A67D064000F8C35 /* Pusher */ = {
-			isa = PBXGroup;
-			children = (
-				17E7DD742A67D064000F8C35 /* AUIRoomLivePusher.m */,
-				17E7DD752A67D064000F8C35 /* AUIRoomLivePusher.h */,
-			);
-			path = Pusher;
-			sourceTree = "<group>";
-		};
-		17E7DD762A67D064000F8C35 /* Message */ = {
-			isa = PBXGroup;
-			children = (
-				17E7DD772A67D064000F8C35 /* AUIRoomMessageModel.m */,
-				17E7DD782A67D064000F8C35 /* AUIRoomMessageService.h */,
-				17E7DD792A67D064000F8C35 /* AUIRoomMessageService.m */,
-				17E7DD7A2A67D064000F8C35 /* AUIRoomMessageModel.h */,
-			);
-			path = Message;
-			sourceTree = "<group>";
-		};
-		17E7DD7D2A67D064000F8C35 /* Beauty */ = {
-			isa = PBXGroup;
-			children = (
-				17E7DD7E2A67D064000F8C35 /* AUIRoomBeautyManager.h */,
-				17E7DD7F2A67D064000F8C35 /* AUIRoomBeautyController.h */,
-				17E7DD802A67D064000F8C35 /* AUIRoomBeautyManager.m */,
-				17E7DD812A67D064000F8C35 /* AUIRoomBeautyController.m */,
-			);
-			path = Beauty;
-			sourceTree = "<group>";
-		};
-		17E7DD822A67D064000F8C35 /* Live */ = {
-			isa = PBXGroup;
-			children = (
-				17E7DD832A67D064000F8C35 /* AUIRoomBaseLiveManager.m */,
-				17E7DD842A67D064000F8C35 /* AUIRoomBaseLiveManager+Private.h */,
-				17E7DD852A67D064000F8C35 /* AUIRoomLiveService.h */,
-				17E7DD862A67D064000F8C35 /* AUIRoomInteractionLiveManager.h */,
-				17E7DD872A67D064000F8C35 /* AUIRoomBaseLiveManager.h */,
-				17E7DD882A67D064000F8C35 /* AUIRoomLiveService.m */,
-				17E7DD892A67D064000F8C35 /* AUIRoomInteractionLiveManager.m */,
-			);
-			path = Live;
-			sourceTree = "<group>";
-		};
-		17E7DD8A2A67D064000F8C35 /* AppServer */ = {
-			isa = PBXGroup;
-			children = (
-				17E7DD8B2A67D065000F8C35 /* AUIRoomAppServer.h */,
-				17E7DD8C2A67D065000F8C35 /* AUIRoomAppServer.m */,
-			);
-			path = AppServer;
-			sourceTree = "<group>";
-		};
-		17E7DD8D2A67D065000F8C35 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				17E7DD8E2A67D065000F8C35 /* AUIRoomAccount.m */,
-				17E7DD8F2A67D065000F8C35 /* AUIRoomDeviceAuth.m */,
-				17E7DD902A67D065000F8C35 /* AUIRoomUser.m */,
-				17E7DD912A67D065000F8C35 /* AUIRoomLiveModel.h */,
-				17E7DD922A67D065000F8C35 /* AUIRoomDisplayView.h */,
-				17E7DD932A67D065000F8C35 /* AUIRoomAccount.h */,
-				17E7DD942A67D065000F8C35 /* AUIRoomDeviceAuth.h */,
-				17E7DD952A67D065000F8C35 /* AUIRoomDisplayView.m */,
-				17E7DD962A67D065000F8C35 /* AUIRoomLiveModel.m */,
-				17E7DD972A67D065000F8C35 /* AUIRoomUser.h */,
-			);
-			path = Base;
-			sourceTree = "<group>";
-		};
-		17E7DD982A67D065000F8C35 /* Player */ = {
-			isa = PBXGroup;
-			children = (
-				17E7DD992A67D065000F8C35 /* AUIRoomLiveCdnPlayer.h */,
-				17E7DD9A2A67D065000F8C35 /* AUIRoomLiveRtcPlayer.m */,
-				17E7DD9B2A67D065000F8C35 /* AUIRoomVodPlayer.h */,
-				17E7DD9C2A67D065000F8C35 /* AUIRoomLiveRtcPlayer.h */,
-				17E7DD9D2A67D065000F8C35 /* AUIRoomLiveCdnPlayer.m */,
-				17E7DD9E2A67D065000F8C35 /* AUIRoomVodPlayer.m */,
-			);
-			path = Player;
-			sourceTree = "<group>";
-		};
-		17E7DDA02A67D065000F8C35 /* UIKit */ = {
-			isa = PBXGroup;
-			children = (
-				17E7DDA12A67D065000F8C35 /* LinkMic */,
-				17E7DDA62A67D065000F8C35 /* Like */,
-				17E7DDA92A67D065000F8C35 /* Comment */,
-				17E7DDB62A67D065000F8C35 /* Prestart */,
-				17E7DDBB2A67D065000F8C35 /* More */,
-				17E7DDBE2A67D065000F8C35 /* Notice */,
-				17E7DDC32A67D065000F8C35 /* Finish */,
-				17E7DDC62A67D065000F8C35 /* Bottom */,
-				17E7DDCB2A67D065000F8C35 /* Base */,
-			);
-			path = UIKit;
-			sourceTree = "<group>";
-		};
-		17E7DDA12A67D065000F8C35 /* LinkMic */ = {
-			isa = PBXGroup;
-			children = (
-				17E7DDA22A67D065000F8C35 /* AUILiveRoomAudienceLinkMicButton.m */,
-				17E7DDA32A67D065000F8C35 /* AUILiveRoomLinkMicListPanel.m */,
-				17E7DDA42A67D065000F8C35 /* AUILiveRoomAudienceLinkMicButton.h */,
-				17E7DDA52A67D065000F8C35 /* AUILiveRoomLinkMicListPanel.h */,
-			);
-			path = LinkMic;
-			sourceTree = "<group>";
-		};
-		17E7DDA62A67D065000F8C35 /* Like */ = {
-			isa = PBXGroup;
-			children = (
-				17E7DDA72A67D065000F8C35 /* AUILiveRoomLikeButton.h */,
-				17E7DDA82A67D065000F8C35 /* AUILiveRoomLikeButton.m */,
-			);
-			path = Like;
-			sourceTree = "<group>";
-		};
-		17E7DDA92A67D065000F8C35 /* Comment */ = {
-			isa = PBXGroup;
-			children = (
-				17E7DDAA2A67D065000F8C35 /* AUILiveRoomCommentTextField.h */,
-				17E7DDAB2A67D065000F8C35 /* AUILiveRoomCommentView.m */,
-				17E7DDAC2A67D065000F8C35 /* AUILiveRoomCommentTextField.m */,
-				17E7DDAD2A67D065000F8C35 /* Model */,
-				17E7DDB02A67D065000F8C35 /* View */,
-				17E7DDB52A67D065000F8C35 /* AUILiveRoomCommentView.h */,
-			);
-			path = Comment;
-			sourceTree = "<group>";
-		};
-		17E7DDAD2A67D065000F8C35 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				17E7DDAE2A67D065000F8C35 /* AUILiveRoomCommentModel.m */,
-				17E7DDAF2A67D065000F8C35 /* AUILiveRoomCommentModel.h */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		17E7DDB02A67D065000F8C35 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				17E7DDB12A67D065000F8C35 /* AUILiveRoomCommentCell.m */,
-				17E7DDB22A67D065000F8C35 /* AUILiveRoomCommentTableView.m */,
-				17E7DDB32A67D065000F8C35 /* AUILiveRoomCommentTableView.h */,
-				17E7DDB42A67D065000F8C35 /* AUILiveRoomCommentCell.h */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		17E7DDB62A67D065000F8C35 /* Prestart */ = {
-			isa = PBXGroup;
-			children = (
-				17E7DDB72A67D065000F8C35 /* AUILiveRoomAudiencePrestartView.m */,
-				17E7DDB82A67D065000F8C35 /* AUILiveRoomAnchorPrestartView.h */,
-				17E7DDB92A67D065000F8C35 /* AUILiveRoomAnchorPrestartView.m */,
-				17E7DDBA2A67D065000F8C35 /* AUILiveRoomAudiencePrestartView.h */,
-			);
-			path = Prestart;
-			sourceTree = "<group>";
-		};
-		17E7DDBB2A67D065000F8C35 /* More */ = {
-			isa = PBXGroup;
-			children = (
-				17E7DDBC2A67D065000F8C35 /* AUILiveRoomMorePanel.h */,
-				17E7DDBD2A67D065000F8C35 /* AUILiveRoomMorePanel.m */,
-			);
-			path = More;
-			sourceTree = "<group>";
-		};
-		17E7DDBE2A67D065000F8C35 /* Notice */ = {
-			isa = PBXGroup;
-			children = (
-				17E7DDBF2A67D065000F8C35 /* AUILIveRoomNoticePanel.h */,
-				17E7DDC02A67D065000F8C35 /* AUILiveRoomNoticeButton.h */,
-				17E7DDC12A67D065000F8C35 /* AUILiveRoomNoticeButton.m */,
-				17E7DDC22A67D065000F8C35 /* AUILIveRoomNoticePanel.m */,
-			);
-			path = Notice;
-			sourceTree = "<group>";
-		};
-		17E7DDC32A67D065000F8C35 /* Finish */ = {
-			isa = PBXGroup;
-			children = (
-				17E7DDC42A67D065000F8C35 /* AUILiveRoomFinishView.h */,
-				17E7DDC52A67D065000F8C35 /* AUILiveRoomFinishView.m */,
-			);
-			path = Finish;
-			sourceTree = "<group>";
-		};
-		17E7DDC62A67D065000F8C35 /* Bottom */ = {
-			isa = PBXGroup;
-			children = (
-				17E7DDC72A67D065000F8C35 /* AUILiveRoomAnchorBottomView.h */,
-				17E7DDC82A67D065000F8C35 /* AUILiveRoomAudienceBottomView.h */,
-				17E7DDC92A67D065000F8C35 /* AUILiveRoomAnchorBottomView.m */,
-				17E7DDCA2A67D065000F8C35 /* AUILiveRoomAudienceBottomView.m */,
-			);
-			path = Bottom;
-			sourceTree = "<group>";
-		};
-		17E7DDCB2A67D065000F8C35 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				17E7DDCC2A67D065000F8C35 /* AUILiveRoomPushStatusView.h */,
-				17E7DDCD2A67D065000F8C35 /* AUILiveRoomInputTitleView.h */,
-				17E7DDCE2A67D065000F8C35 /* AUILiveRoomAvatarView.m */,
-				17E7DDCF2A67D065000F8C35 /* AUILiveRoomMemberButton.m */,
-				17E7DDD02A67D065000F8C35 /* AUILiveRoomLivingContainerView.m */,
-				17E7DDD12A67D065000F8C35 /* AUILiveRoomInfoView.h */,
-				17E7DDD22A67D065000F8C35 /* AUILiveRoomInputTitleView.m */,
-				17E7DDD32A67D065000F8C35 /* AUILiveRoomPushStatusView.m */,
-				17E7DDD42A67D065000F8C35 /* AUILiveRoomAvatarView.h */,
-				17E7DDD52A67D065000F8C35 /* AUILiveRoomInfoView.m */,
-				17E7DDD62A67D065000F8C35 /* AUILiveRoomLivingContainerView.h */,
-				17E7DDD72A67D065000F8C35 /* AUILiveRoomMemberButton.h */,
-			);
-			path = Base;
 			sourceTree = "<group>";
 		};
 		6B3A9EF6607301CF5D506E4F /* Pods */ = {
@@ -622,11 +182,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17E7DE0B2A67D065000F8C35 /* README.md in Resources */,
 				17E7DB4D2A67CC27000F8C35 /* LaunchScreen.storyboard in Resources */,
 				17E7DB4A2A67CC27000F8C35 /* Assets.xcassets in Resources */,
-				17E7DDDD2A67D065000F8C35 /* AUIInteractionLive.bundle in Resources */,
 				17E7DE0D2A67D13D000F8C35 /* Podfile in Resources */,
+				17E4F57E2A8CA2E5009E562D /* license.crt in Resources */,
 				17E7DE0F2A67D970000F8C35 /* GXInteractionLive.podspec in Resources */,
 				17E7DB482A67CC25000F8C35 /* Main.storyboard in Resources */,
 			);
@@ -694,56 +253,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17E7DDFB2A67D065000F8C35 /* AUILiveRoomAudiencePrestartView.m in Sources */,
-				17E7DDEF2A67D065000F8C35 /* AUIRoomLiveModel.m in Sources */,
 				17E7DB452A67CC25000F8C35 /* ViewController.m in Sources */,
-				17E7DDFA2A67D065000F8C35 /* AUILiveRoomCommentTableView.m in Sources */,
-				17E7DDFC2A67D065000F8C35 /* AUILiveRoomAnchorPrestartView.m in Sources */,
-				17E7DE072A67D065000F8C35 /* AUILiveRoomPushStatusView.m in Sources */,
-				17E7DDF62A67D065000F8C35 /* AUILiveRoomCommentView.m in Sources */,
-				17E7DDFE2A67D065000F8C35 /* AUILiveRoomNoticeButton.m in Sources */,
-				17E7DDF22A67D065000F8C35 /* AUIRoomVodPlayer.m in Sources */,
-				17E7DE062A67D065000F8C35 /* AUILiveRoomInputTitleView.m in Sources */,
-				17E7DDE92A67D065000F8C35 /* AUIRoomInteractionLiveManager.m in Sources */,
-				17E7DE092A67D065000F8C35 /* AUIInteractionLiveListViewController.m in Sources */,
-				17E7DDE42A67D065000F8C35 /* AUIRoomMessageService.m in Sources */,
-				17E7DDED2A67D065000F8C35 /* AUIRoomUser.m in Sources */,
-				17E7DDE52A67D065000F8C35 /* AUIRoomBeautyManager.m in Sources */,
-				17E7DDE12A67D065000F8C35 /* AUILiveRoomCreateViewController.m in Sources */,
-				17E7DDF32A67D065000F8C35 /* AUILiveRoomAudienceLinkMicButton.m in Sources */,
-				17E7DDE02A67D065000F8C35 /* AUILiveRoomAudienceViewController.m in Sources */,
-				17E7DE012A67D065000F8C35 /* AUILiveRoomAnchorBottomView.m in Sources */,
-				17E7DE052A67D065000F8C35 /* AUILiveRoomLivingContainerView.m in Sources */,
 				17E7DB3F2A67CC25000F8C35 /* AppDelegate.m in Sources */,
-				17E7DE0A2A67D065000F8C35 /* AUIInteractionLiveManager.m in Sources */,
-				17E7DDF52A67D065000F8C35 /* AUILiveRoomLikeButton.m in Sources */,
-				17E7DDFD2A67D065000F8C35 /* AUILiveRoomMorePanel.m in Sources */,
-				17E7DDDF2A67D065000F8C35 /* AUILiveRoomActionManager.m in Sources */,
-				17E7DDEC2A67D065000F8C35 /* AUIRoomDeviceAuth.m in Sources */,
 				17E7DB502A67CC27000F8C35 /* main.m in Sources */,
-				17E7DDE32A67D065000F8C35 /* AUIRoomMessageModel.m in Sources */,
-				17E7DDE22A67D065000F8C35 /* AUIRoomLivePusher.m in Sources */,
-				17E7DDF92A67D065000F8C35 /* AUILiveRoomCommentCell.m in Sources */,
-				17E7DDDE2A67D065000F8C35 /* AUILiveRoomAnchorViewController.m in Sources */,
-				17E7DE032A67D065000F8C35 /* AUILiveRoomAvatarView.m in Sources */,
 				17E7DB422A67CC25000F8C35 /* SceneDelegate.m in Sources */,
-				17E7DE022A67D065000F8C35 /* AUILiveRoomAudienceBottomView.m in Sources */,
-				17CCB8092A73B149007DFD5F /* GXLiveManager.m in Sources */,
-				17E7DE002A67D065000F8C35 /* AUILiveRoomFinishView.m in Sources */,
-				17E7DDF72A67D065000F8C35 /* AUILiveRoomCommentTextField.m in Sources */,
-				17E7DDF82A67D065000F8C35 /* AUILiveRoomCommentModel.m in Sources */,
-				17E7DE082A67D065000F8C35 /* AUILiveRoomInfoView.m in Sources */,
-				17E7DDEA2A67D065000F8C35 /* AUIRoomAppServer.m in Sources */,
-				17E7DDEB2A67D065000F8C35 /* AUIRoomAccount.m in Sources */,
-				17E7DDE62A67D065000F8C35 /* AUIRoomBeautyController.m in Sources */,
-				17E7DDE72A67D065000F8C35 /* AUIRoomBaseLiveManager.m in Sources */,
-				17E7DDF42A67D065000F8C35 /* AUILiveRoomLinkMicListPanel.m in Sources */,
-				17E7DDEE2A67D065000F8C35 /* AUIRoomDisplayView.m in Sources */,
-				17E7DDE82A67D065000F8C35 /* AUIRoomLiveService.m in Sources */,
-				17E7DDFF2A67D065000F8C35 /* AUILIveRoomNoticePanel.m in Sources */,
-				17E7DE042A67D065000F8C35 /* AUILiveRoomMemberButton.m in Sources */,
-				17E7DDF02A67D065000F8C35 /* AUIRoomLiveRtcPlayer.m in Sources */,
-				17E7DDF12A67D065000F8C35 /* AUIRoomLiveCdnPlayer.m in Sources */,
+				1745A4052A8B26620013F735 /* GXLiveManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -885,6 +399,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N5Q3X24W35;
@@ -941,8 +456,9 @@
 					"-framework",
 					"\"alivcffmpeg\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.GXInteractionLive;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qdgx.yzj;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -954,9 +470,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N5Q3X24W35;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GXInteractionLive/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1010,8 +527,9 @@
 					"-framework",
 					"\"alivcffmpeg\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.GXInteractionLive;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qdgx.yzj;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

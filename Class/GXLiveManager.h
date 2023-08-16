@@ -11,12 +11,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface GXLiveManager : NSObject
 
-+ (BOOL)isLogin;
++ (void)initLiveSDK;
 
-+ (void)initLiveSDK:(NSString *)uid onCompleted:(void(^)(BOOL success))completed;
-
-+ (void)entryLiveWithUserId:(NSString *)userId liveId:(NSString *)liveId;
-
++ (void)entryLiveWithUserId:(NSString *)userId userName:(NSString *)userName liveId:(NSString *)liveId onCompleted:(void(^)(BOOL success))completed;;
 @end
 
 NS_ASSUME_NONNULL_END
