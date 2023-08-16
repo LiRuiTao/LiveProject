@@ -49,14 +49,14 @@
             self.linkMicButton = linkMicButton;
         }
         
-        UIButton* shareButton = [[UIButton alloc] initWithFrame:CGRectMake((self.linkMicButton ? self.linkMicButton.av_left : self.likeButton.av_left) - 12 - 36, startY, 36, 36)];
-        [shareButton setImage:AUIRoomGetCommonImage(@"ic_living_bottom_share") forState:UIControlStateNormal];
-        shareButton.backgroundColor = [UIColor av_colorWithHexString:@"#1C1D22" alpha:0.4];
-        [shareButton addTarget:self action:@selector(shareButtonAction:) forControlEvents:UIControlEventTouchUpInside];
-        shareButton.layer.masksToBounds = YES;
-        shareButton.layer.cornerRadius = 18;
-        [self addSubview:shareButton];
-        self.shareButton = shareButton;
+//        UIButton* shareButton = [[UIButton alloc] initWithFrame:CGRectMake((self.linkMicButton ? self.linkMicButton.av_left : self.likeButton.av_left) - 12 - 36, startY, 36, 36)];
+//        [shareButton setImage:AUIRoomGetCommonImage(@"ic_living_bottom_share") forState:UIControlStateNormal];
+//        shareButton.backgroundColor = [UIColor av_colorWithHexString:@"#1C1D22" alpha:0.4];
+//        [shareButton addTarget:self action:@selector(shareButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+//        shareButton.layer.masksToBounds = YES;
+//        shareButton.layer.cornerRadius = 18;
+//        [self addSubview:shareButton];
+//        self.shareButton = shareButton;
         
         AUILiveRoomCommentTextField* commentTextField = [[AUILiveRoomCommentTextField alloc] initWithFrame:CGRectMake(16, startY, 120, 36)];
         commentTextField.layer.masksToBounds = YES;

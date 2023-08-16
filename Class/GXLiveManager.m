@@ -6,40 +6,39 @@
 //
 
 #import "GXLiveManager.h"
-#import "AUIInteractionLiveListViewController.h"
 #import "AUIRoomAccount.h"
 #import "AUIInteractionLiveManager.h"
 #import "AUIRoomAppServer.h"
+static BOOL isEntrying = false;
 @implementation GXLiveManager
 
-+ (void)entryLiveWithUserId:(NSString *)userId liveId:(NSString *)liveId {
-    NSDictionary *data = @{@"id": liveId, @"nick": userId};
-    AUIRoomLiveInfoModel *model = [[AUIRoomLiveInfoModel alloc]initWithResponseData:data];
-    [[AUIInteractionLiveManager defaultManager] joinLive:model currentVC:[GXLiveManager getCurrentVC]];
-}
-
-+ (void)initLiveSDK:(NSString *)uid onCompleted:(void(^)(BOOL success))completed {
++ (void)initLiveSDK {
     [AUIInteractionLiveManager registerLive];
-    [AUIRoomAppServer requestWithPath:@"/api/v1/live/login" bodyDic:@{@"password":uid, @"username":uid} completionHandler:^(NSURLResponse * _Nonnull response, id  _Nonnull responseObject, NSError * _Nonnull error) {
+}
++ (void)entryLiveWithUserId:(NSString *)userId userName:(NSString *)userName liveId:(NSString *)liveId onCompleted:(void(^)(BOOL success))completed {
+    if (isEntrying) return;
+    isEntrying = true;
+    [AUIRoomAppServer requestWithPath:@"/api/v1/live/login" bodyDic:@{@"userId":userId, @"password":userName, @"username":userName} completionHandler:^(NSURLResponse * _Nonnull response, id  _Nonnull responseObject, NSError * _Nonnull error) {
         if (!error) {
-            AUIRoomAccount.me.userId = uid;
-            AUIRoomAccount.me.avatar = [GXLiveManager defaultAvatarWithUid:uid];
-            AUIRoomAccount.me.nickName = uid;
+            AUIRoomAccount.me.userId = userId;
+            AUIRoomAccount.me.avatar = [GXLiveManager defaultAvatarWithUid:userId];
+            AUIRoomAccount.me.nickName = userName;
             AUIRoomAccount.me.token = [responseObject objectForKey:@"token"];
             [GXLiveManager saveCurrentUser];
             if(completed) {
                 completed(true);
             }
+            NSDictionary *data = @{@"id": liveId, @"nick": userName};
+            AUIRoomLiveInfoModel *model = [[AUIRoomLiveInfoModel alloc]initWithResponseData:data];
+            [[AUIInteractionLiveManager defaultManager] joinLive:model currentVC:[GXLiveManager getCurrentVC]];
+            isEntrying = false;
         } else {
+            isEntrying = false;
             if(completed) {
                 completed(false);
             }
         }
     }];
-}
-
-+ (BOOL)isLogin {
-    return AUIRoomAccount.me.userId.length > 0;
 }
 
 + (UIViewController *)getCurrentVC {
@@ -66,26 +65,6 @@
     return result;
 }
 
-+ (void)loadCurrentUser {
-    NSString *userId = [[NSUserDefaults standardUserDefaults] objectForKey:@"my_user_id"];
-    NSString *nickName = [[NSUserDefaults standardUserDefaults] objectForKey:@"my_user_name"];
-    NSString *token = [[NSUserDefaults standardUserDefaults] objectForKey:@"my_user_token"];
-    if (userId.length > 0) {
-        AUIRoomAccount.me.userId = userId;
-        AUIRoomAccount.me.avatar = [self defaultAvatarWithUid:userId];
-        AUIRoomAccount.me.nickName = nickName;
-        AUIRoomAccount.me.token = token;
-    }
-}
-
-+ (void)saveCurrentUser {
-    [[NSUserDefaults standardUserDefaults] setObject:AUIRoomAccount.me.userId forKey:@"my_user_id"];
-    [[NSUserDefaults standardUserDefaults] setObject:AUIRoomAccount.me.token forKey:@"my_user_token"];
-    [[NSUserDefaults standardUserDefaults] setObject:AUIRoomAccount.me.nickName forKey:@"my_user_name"];
-    [[NSUserDefaults standardUserDefaults] setObject:AUIRoomAccount.me.nickName forKey:@"last_login_name"];
-    [[NSUserDefaults standardUserDefaults] synchronize];
-}
-
 + (NSArray *)defaultAvatarList {
     static NSArray *_avatarList = nil;
     if (!_avatarList) {
@@ -108,6 +87,14 @@
         return array[first % array.count];
     }
     return @"";
+}
+
++ (void)saveCurrentUser {
+    [[NSUserDefaults standardUserDefaults] setObject:AUIRoomAccount.me.userId forKey:@"my_user_id"];
+    [[NSUserDefaults standardUserDefaults] setObject:AUIRoomAccount.me.token forKey:@"my_user_token"];
+    [[NSUserDefaults standardUserDefaults] setObject:AUIRoomAccount.me.nickName forKey:@"my_user_name"];
+    [[NSUserDefaults standardUserDefaults] setObject:AUIRoomAccount.me.nickName forKey:@"last_login_name"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 @end

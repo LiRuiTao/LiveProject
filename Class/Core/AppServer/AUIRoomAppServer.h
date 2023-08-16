@@ -20,6 +20,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (void)requestWithPath:(NSString *)path bodyDic:(NSDictionary *)bodyDic completionHandler:(void (^)(NSURLResponse *response, id responseObject,  NSError * error))completionHandler;
 
++ (void)requestWithUrl:(NSString *)path bodyDic:(NSDictionary *)bodyDic completionHandler:(void (^)(NSURLResponse *response, id responseObject,  NSError * error))completionHandler;
+
 + (void)fetchToken:(void(^)(NSString * _Nullable accessToken, NSString * _Nullable refreshToken, NSError * _Nullable error))completed;
 
 + (void)createLive:(NSString * _Nullable)groupId mode:(NSInteger)mode title:(NSString *)title notice:(NSString * _Nullable)notice extend:(NSDictionary * _Nullable)extend completed:(void(^)(AUIRoomLiveInfoModel * _Nullable model, NSError * _Nullable error))completed;

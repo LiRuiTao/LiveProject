@@ -25,7 +25,7 @@
 #import "AUIRoomAccount.h"
 #import "AUIRoomDeviceAuth.h"
 #import "AUILiveRoomActionManager.h"
-
+#import "AUIRoomAppServer.h"
 @interface AUILiveRoomAudienceViewController () <AVUIViewControllerInteractivePodGesture>
 
 @property (strong, nonatomic) AVBlockButton* exitButton;
@@ -80,7 +80,11 @@
                 }
                 [weakSelf.liveManager destoryPullPlayer];
                 [weakSelf.liveService leaveRoom:nil];
-                [weakSelf.navigationController popViewControllerAnimated:YES];
+                if (weakSelf.navigationController) {
+                    [weakSelf.navigationController popViewControllerAnimated:YES];
+                } else {
+                    [weakSelf dismissViewControllerAnimated:YES completion:^{}];
+                }
             };
             
             if (weakSelf.liveService.liveInfoModel.status == AUIRoomLiveStatusLiving && [weakSelf linkMicManager] && [weakSelf linkMicManager].isJoinedLinkMic) {
@@ -259,7 +263,9 @@
 #pragma mark - LifeCycle
 
 - (void)dealloc {
-    NSLog(@"dealloc:AUILiveRoomAudienceViewController");
+    NSString *liveId = self.liveService.liveInfoModel.live_id ? : @"";
+    [AUIRoomAppServer requestWithUrl:@"/web/managerAPI/live/exit" bodyDic:@{@"liveId": liveId} completionHandler:^(NSURLResponse * _Nonnull response, id  _Nonnull responseObject, NSError * _Nonnull error) {
+    }];
 }
 
 - (instancetype)initWithLiveService:(AUIRoomLiveService *)liveService {
@@ -342,7 +348,11 @@
         }
         if (!success) {
             [AVAlertController showWithTitle:nil message:@"进入直播间失败，请稍后重试~" needCancel:NO onCompleted:^(BOOL isCanced) {
-                [weakSelf.navigationController popViewControllerAnimated:YES];
+                if (weakSelf.navigationController) {
+                    [weakSelf.navigationController popViewControllerAnimated:YES];
+                } else {
+                    [weakSelf dismissViewControllerAnimated:YES completion:^{}];
+                }
             }];
         }
         else {

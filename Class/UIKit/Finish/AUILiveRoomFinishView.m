@@ -89,14 +89,14 @@
         [self addSubview:likeButton];
         self.likeButton = likeButton;
         
-        UIButton* shareButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 36, 36)];
-        [shareButton setImage:AUIRoomGetCommonImage(@"ic_living_bottom_share") forState:UIControlStateNormal];
-        shareButton.backgroundColor = [UIColor av_colorWithHexString:@"#1C1D22" alpha:0.4];
-        [shareButton addTarget:self action:@selector(shareButtonAction:) forControlEvents:UIControlEventTouchUpInside];
-        shareButton.layer.masksToBounds = YES;
-        shareButton.layer.cornerRadius = 18;
-        [self addSubview:shareButton];
-        self.shareButton = shareButton;
+//        UIButton* shareButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 36, 36)];
+//        [shareButton setImage:AUIRoomGetCommonImage(@"ic_living_bottom_share") forState:UIControlStateNormal];
+//        shareButton.backgroundColor = [UIColor av_colorWithHexString:@"#1C1D22" alpha:0.4];
+//        [shareButton addTarget:self action:@selector(shareButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+//        shareButton.layer.masksToBounds = YES;
+//        shareButton.layer.cornerRadius = 18;
+//        [self addSubview:shareButton];
+//        self.shareButton = shareButton;
         
         self.likeButton.frame = CGRectMake(self.av_width - 36 - 16, self.av_height - AVSafeBottom - 56 - 4 - 36, 36, 36);
         self.shareButton.frame = CGRectMake(self.likeButton.av_left - 36 - 12, self.likeButton.av_top, 36, 36);

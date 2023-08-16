@@ -8,7 +8,7 @@
 #import "AUIRoomAppServer.h"
 #import "AUIRoomAccount.h"
 
-static NSString * const kLiveServiceDomainString = @"http://43.138.126.98";
+static NSString * const kLiveServiceDomainString = @"https://gxxytest.aqdpay.com";
 
 @implementation AUIRoomAppServer
 
@@ -45,10 +45,63 @@ static BOOL g_staging = NO;
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dict options:NSJSONWritingPrettyPrinted error:nil];
     return [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
 }
++ (void)requestWithUrl:(NSString *)path bodyDic:(NSDictionary *)bodyDic completionHandler:(void (^)(NSURLResponse *response, id responseObject,  NSError * error))completionHandler {
+    NSString *urlString = [NSString stringWithFormat:@"%@%@", [self finalServiceUrl], path];
+    NSURLSessionConfiguration *sessionConfiguration = [NSURLSessionConfiguration defaultSessionConfiguration];
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:sessionConfiguration];
+    NSURL *url = [NSURL URLWithString:urlString];
+    NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:url];
+    [urlRequest addValue:@"application/json" forHTTPHeaderField:@"accept"];
+    [urlRequest addValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    [urlRequest addValue:[self envString] forHTTPHeaderField:@"x-live-env"];  // staging/production
+    [urlRequest addValue:[NSString stringWithFormat:@"Bearer %@", AUIRoomAccount.me.token ?: @"live"] forHTTPHeaderField:@"Authorization"];
+    urlRequest.HTTPMethod = @"POST";
+    if (bodyDic) {
+        urlRequest.HTTPBody = [NSJSONSerialization dataWithJSONObject:bodyDic options:NSJSONWritingPrettyPrinted error:nil];
+    }
+
+    NSURLSessionDataTask *task = [session dataTaskWithRequest:urlRequest
+                                        completionHandler:^(NSData *_Nullable data, NSURLResponse *_Nullable response, NSError *_Nullable error) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (error) {
+                if (completionHandler) {
+                    completionHandler(response, nil, error);
+                }
+                return;
+            }
+            NSError *jsonError = nil;
+            id jsonObj = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&jsonError];
+            if (jsonError || [jsonObj isKindOfClass:NSNull.class]) {
+                if (completionHandler) {
+                    completionHandler(response, nil, jsonError);
+                }
+                return;
+            }
+    
+            if ([response isKindOfClass:NSHTTPURLResponse.class]) {
+                NSHTTPURLResponse *http = (NSHTTPURLResponse *)response;
+                if (http.statusCode == 200) {
+                    if (completionHandler) {
+                        completionHandler(response, jsonObj, nil);
+                    }
+                }
+                else if (http.statusCode >= 400) {
+                    NSError *retError = [NSError errorWithDomain:@"live.service" code:http.statusCode userInfo:jsonObj];
+                    if (completionHandler) {
+                        completionHandler(response, nil, retError);
+                    }
+            }
+            return;
+        }
+    });
+    }];
+
+    [task resume];
+}
 
 + (void)requestWithPath:(NSString *)path bodyDic:(NSDictionary *)bodyDic completionHandler:(void (^)(NSURLResponse *response, id responseObject,  NSError * error))completionHandler {
         
-    NSString *urlString = [NSString stringWithFormat:@"%@%@", [self finalServiceUrl], path];
+    NSString *urlString = [NSString stringWithFormat:@"%@/live%@", [self finalServiceUrl], path];
     NSURLSessionConfiguration *sessionConfiguration = [NSURLSessionConfiguration defaultSessionConfiguration];
     NSURLSession *session = [NSURLSession sessionWithConfiguration:sessionConfiguration];
     NSURL *url = [NSURL URLWithString:urlString];

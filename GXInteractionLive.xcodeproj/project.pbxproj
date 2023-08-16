@@ -68,6 +68,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1708BFF42A8CDD9D005C5B0D /* license.crt */ = {isa = PBXFileReference; lastKnownFileType = text; path = license.crt; sourceTree = "<group>"; };
 		175CDC2E2A73A61C0012FBCB /* GXLiveManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GXLiveManager.h; sourceTree = "<group>"; };
 		175CDC2F2A73A61C0012FBCB /* GXLiveManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GXLiveManager.m; sourceTree = "<group>"; };
 		17E7DB3A2A67CC25000F8C35 /* GXInteractionLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GXInteractionLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -270,6 +271,7 @@
 		17E7DD672A67D064000F8C35 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				1708BFF42A8CDD9D005C5B0D /* license.crt */,
 				175CDC2E2A73A61C0012FBCB /* GXLiveManager.h */,
 				175CDC2F2A73A61C0012FBCB /* GXLiveManager.m */,
 				17E7DD682A67D064000F8C35 /* Room */,

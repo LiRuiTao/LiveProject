@@ -169,12 +169,18 @@
                 AUIRoomLiveService *liveService = [[AUIRoomLiveService alloc] initWithModel:model withJoinList:joinList];
                 if ([model.anchor_id isEqualToString:AUIRoomAccount.me.userId]) {
                     AUILiveRoomAnchorViewController *vc = [[AUILiveRoomAnchorViewController alloc] initWithLiveService:liveService];
-//                    [currentVC.navigationController pushViewController:vc animated:YES];
+                    if (currentVC.navigationController) {
+                        [currentVC.navigationController pushViewController:vc animated:YES];
+                        return;
+                    }
                     [currentVC av_presentFullScreenViewController:vc animated:YES completion:nil];
                 }
                 else {
                     AUILiveRoomAudienceViewController *vc = [[AUILiveRoomAudienceViewController alloc] initWithLiveService:liveService];
-//                    [currentVC.navigationController pushViewController:vc animated:YES];
+                    if (currentVC.navigationController) {
+                        [currentVC.navigationController pushViewController:vc animated:YES];
+                        return;
+                    }
                     [currentVC av_presentFullScreenViewController:vc animated:YES completion:nil];
                 }
                 [weakSelf saveLastLiveData:liveId];
