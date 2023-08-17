@@ -8,10 +8,10 @@ platform :ios, '10.0'
 target 'GXInteractionLive' do
     # 根据自己的业务场景，集成合适的音视频终端SDK
     # 如果您的App中还需要频短视频编辑功能，可以使用音视频终端全功能SDK（AliVCSDK_Premium），可以把本文件中的所有AliVCSDK_PremiumLive替换为AliVCSDK_Premium
-    pod 'AliVCSDK_PremiumLive', '~> 1.8.0'
+    pod 'AliVCSDK_PremiumLive', '~> 6.2.0'
 
     # 互动SDK
-    pod 'AlivcInteraction', '~> 1.0.0'
+    pod 'AlivcInteraction', '~> 1.1.0'
 
     # 基础UI组件
     pod 'AUIFoundation/All', '~> 1.8.0'
@@ -25,5 +25,12 @@ target 'GXInteractionLive' do
     pod 'AUIQueenCom/AliVCSDK_PremiumLive', '~> 1.8.0'
 
 end
+
+
+
+
+
+
+
 
 

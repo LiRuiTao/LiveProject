@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "GXInteractionLive"
-  spec.version      = "0.0.6"
+  spec.version      = "0.0.7"
   spec.summary      = "A short description of GXInteractionLive."
 
   # This description is used to generate tags and improve search results.
@@ -65,7 +65,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.platform     = :ios
-   spec.platform     = :ios, "11.0"
+   spec.platform     = :ios, "10.0"
 
   #  When using multiple platforms
   # spec.ios.deployment_target = "5.0"
@@ -107,7 +107,6 @@ Pod::Spec.new do |spec|
 
   # spec.resource  = "icon.png"
     spec.resource = "Resources/AUIInteractionLive.bundle"
-
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
 
@@ -119,6 +118,9 @@ Pod::Spec.new do |spec|
 
   # spec.framework  = "SomeFramework"
   # spec.frameworks = "SomeFramework", "AnotherFramework"
+
+  spec.static_framework = true
+
 
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"
@@ -136,8 +138,8 @@ Pod::Spec.new do |spec|
   spec.dependency "Masonry", "~> 1.1.0"
   spec.dependency "MJRefresh", "~> 3.7.5"
   spec.dependency "SDWebImage", "~> 5.16.0"
-  spec.dependency "AliVCSDK_PremiumLive", "~> 1.8.0"
-  spec.dependency "AlivcInteraction", "~> 1.0.0"
+  spec.dependency "AliVCSDK_PremiumLive", "~> 6.2.0"
+  spec.dependency "AlivcInteraction", "~> 1.1.0"
   spec.dependency "AUIFoundation/All", "~> 1.8.0"
   spec.dependency "AUIQueenCom/AliVCSDK_PremiumLive", "~> 1.8.0"
   
