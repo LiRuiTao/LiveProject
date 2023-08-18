@@ -7,7 +7,8 @@
 
 #import "AUILiveRoomAvatarView.h"
 #import "AUIRoomMacro.h"
-#import <SDWebImage/SDWebImage.h>
+#import <UIImageView+WebCache.h>
+
 @interface AUILiveRoomAvatarView ()
 
 @property (nonatomic, strong) UIImageView *iconView;

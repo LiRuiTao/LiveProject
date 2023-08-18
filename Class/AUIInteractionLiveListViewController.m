@@ -16,7 +16,7 @@
 #import "AUIRoomAccount.h"
 
 #import <MJRefresh/MJRefresh.h>
-#import <SDWebImage/SDWebImage.h>
+#import <UIImageView+WebCache.h>
 
 @interface AUIRoomItem : NSObject
 

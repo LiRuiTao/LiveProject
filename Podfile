@@ -19,13 +19,12 @@ target 'GXInteractionLive' do
     #
     pod 'Masonry', '~> 1.1.0'
     pod 'MJRefresh', '~> 3.7.5'
-    pod 'SDWebImage', '~> 5.16.0'
+    pod 'SDWebImage', '4.4.7'
     
     # 美颜UI组件，如果终端SDK使用的是AliVCSDK_Premium，需要AliVCSDK_PremiumLive替换为AliVCSDK_Premium
     pod 'AUIQueenCom/AliVCSDK_PremiumLive', '~> 1.8.0'
 
 end
-
 
 
 
