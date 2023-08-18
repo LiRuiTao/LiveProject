@@ -8,7 +8,7 @@
 #import "AUILiveRoomAnchorPrestartView.h"
 #import "AUIFoundation.h"
 #import "AUIRoomMacro.h"
-#import <UIImageView+WebCache.h>
+#import <SDWebImage/UIImageView+WebCache.h>
 
 @interface AUILiveRoomAnchorPrestartView()
 
