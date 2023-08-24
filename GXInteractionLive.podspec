@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "GXInteractionLive"
-  spec.version      = "0.0.9"
+  spec.version      = "0.1.0"
   spec.summary      = "A short description of GXInteractionLive."
 
   # This description is used to generate tags and improve search results.
@@ -139,7 +139,7 @@ Pod::Spec.new do |spec|
   spec.dependency "MJRefresh", "~> 3.7.5"
   spec.dependency "SDWebImage", "4.4.7"
   spec.dependency "AliVCSDK_PremiumLive", "~> 6.2.0"
-  spec.dependency "AlivcInteraction", "~> 1.1.0"
+  spec.dependency "AlivcInteraction", "~> 1.2.0"
   spec.dependency "AUIFoundation/All", "~> 1.8.0"
   spec.dependency "AUIQueenCom/AliVCSDK_PremiumLive", "~> 1.8.0"
   

@@ -11,7 +11,7 @@ target 'GXInteractionLive' do
     pod 'AliVCSDK_PremiumLive', '~> 6.2.0'
 
     # 互动SDK
-    pod 'AlivcInteraction', '~> 1.1.0'
+    pod 'AlivcInteraction', '~> 1.2.0'
 
     # 基础UI组件
     pod 'AUIFoundation/All', '~> 1.8.0'
