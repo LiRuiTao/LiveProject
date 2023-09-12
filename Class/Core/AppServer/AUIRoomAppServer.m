@@ -8,7 +8,9 @@
 #import "AUIRoomAppServer.h"
 #import "AUIRoomAccount.h"
 
-static NSString * const kLiveServiceDomainString = @"https://gxxytest.aqdpay.com";
+//static NSString * const kLiveServiceDomainString = @"https://gxxytest.aqdpay.com";
+static NSString * const kLiveServiceDomainString = @"https://gxxy.qdgxjt.com";
+
 
 @implementation AUIRoomAppServer
 

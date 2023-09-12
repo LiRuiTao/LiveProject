@@ -892,6 +892,8 @@
 				DEVELOPMENT_TEAM = N5Q3X24W35;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GXInteractionLive/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "需要使用摄像头直播";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "需要使用麦克风直播";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -943,7 +945,7 @@
 					"-framework",
 					"\"alivcffmpeg\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.GXInteractionLive;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qdgx.yzj;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -961,6 +963,8 @@
 				DEVELOPMENT_TEAM = N5Q3X24W35;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GXInteractionLive/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "需要使用摄像头直播";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "需要使用麦克风直播";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -1012,7 +1016,7 @@
 					"-framework",
 					"\"alivcffmpeg\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.GXInteractionLive;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qdgx.yzj;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";

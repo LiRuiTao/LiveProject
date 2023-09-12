@@ -25,7 +25,7 @@
 
 }
 - (void)openLiveListVC {
-    [GXLiveManager entryLiveWithUserId:@"3" userName:@"zhuyuntest2" liveId:@"d47254c3-6c4a-4ae7-9c51-0c51e8d80725" onCompleted:^(BOOL success) {}];
+    [GXLiveManager entryLiveWithUserId:@"3" userName:@"zhuyuntest2" liveId:@"43790a2f-2624-4480-a10e-bfd3c618f2c3" onCompleted:^(BOOL success) {}];
 }
 
 @end
